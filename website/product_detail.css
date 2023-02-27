@@ -1,0 +1,96 @@
+body {
+    font-family: sans-serif;
+    word-break: break-word;
+    height: 100vh;
+    flex-direction: column;
+    display: flex;
+}
+
+.product_detail {
+    display: flex;
+    justify-content: center;
+    margin: 4%;
+    flex: 1;
+}
+
+h1 {
+    margin: 0;
+}
+
+.product_image {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+.product_info {
+    padding: 0px 10px;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.product_name {
+    display: flex;
+    flex-direction: column;
+}
+
+.product_description {
+    flex-direction: row;
+}
+
+.img_details {
+    width: 70%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px 4px 0 0;
+}
+
+button {
+    background: rgb(25, 103, 210);
+    display: flex;
+    color:#c4c4c8;
+    justify-content: center;
+    width: 30%;
+    font-family: 'Cabin';
+    border-radius: 14px;
+    border: none;
+    padding: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+button:hover {
+    background: rgb(25, 64, 210);
+}
+
+.product_add {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.product_add_text {
+    display:flex;
+    align-self:center; 
+    margin-left:5px;
+}
+
+button::before {
+    content: url("img/detail_cart.svg");
+}
+
+@media only screen and (max-width: 800px) {
+    .product_detail {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product_image {
+        width: 90%;
+    }
+    
+    .product_info {
+        width: 90%;
+    }
+}

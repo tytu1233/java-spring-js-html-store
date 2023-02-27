@@ -1,0 +1,190 @@
+body {
+    font-family: sans-serif;
+    word-break: break-word;
+}
+
+.order_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2% auto;
+    min-height: 570px;
+}
+
+.order {
+    display: none;
+    justify-content: center;
+    border: 1px solid #c4c4c8;
+    border-radius: 5px;
+    width: 80%;
+    flex-direction: row;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+#orderek {
+    display: none;
+    justify-content: center;
+    border: 1px solid #c4c4c8;
+    border-radius: 5px;
+    width: 80%;
+    flex-direction: row;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+#halo {
+        display: none;
+        justify-content: center;
+        border: 1px solid #c4c4c8;
+        border-radius: 5px;
+        width: 80%;
+        flex-direction: row;
+        margin-top: 1%;
+        margin-bottom: 1%;
+}
+
+.order_products_describe {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 70%;
+}
+
+.order_products_data {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.test {
+    display: flex;
+    padding: 2%;
+    justify-content: center;
+}
+
+.order_detail {
+    margin: 1%;
+    width: 80%;
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.collapsible {
+    margin-top:2%;
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 80%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+  
+.active, .collapsible:hover {
+    background-color: #555;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    margin-block-start: 0;
+    margin-block-end: 0.15em;
+}
+
+.order_products_detail {
+    padding: 2%;
+    width: 100%;
+    display: flex;
+}
+
+.img_details {
+    height: 100px;
+    width: 100px;
+}
+
+.order_products_image {
+    display: flex;
+    width: 30%;
+    justify-content: center;
+    height: 100%;
+}
+
+.order_products_name {
+    display: flex;
+    font-size: 30px;
+    width:50%;
+}
+
+.order_products_price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 20px;
+}
+
+#baton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (min-width: 501px) and (max-width: 800px) {
+
+    .order {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .order_products_name {
+        font-size: 20px;
+    }
+
+    .order_products_price{
+        font-size: 11px;
+    }
+
+
+    .order_info {
+        align-items: center;
+        width: 100%;
+    }
+
+    .order {
+        width: 80%;
+    }
+
+}
+
+
+@media only screen and (max-width: 500px) { 
+
+    .order {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .order_products_name {
+        font-size: 20px;
+    }
+
+    .order_products_price{
+        font-size: 11px;
+    }
+
+    .order_info {
+        align-items: center;
+        width: 100%;
+    }
+
+    .order {
+        width: 80%;
+    }
+
+}

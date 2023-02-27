@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>FAKE - sklep z odzieżą</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">    
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="stylesheet" type="text/css" href="product_detail.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="navbar">
+        <div id="logo">
+            <a href="index.html"><img src="img/logo.png" alt="LOGO"/></a>
+        </div>
+        <div id="search">
+            <div class="wrapper">
+                <div class="search-input">
+                  <a href="" target="_blank" hidden></a>
+                  <input type="text" placeholder="Wyszukaj">
+                  <div class="autocom-box">
+                    <!-- lista produktów do wyszukania -->
+                  </div>
+                  <div class="icon"><i class="fas fa-search"></i></div>
+                </div>
+              </div>       
+        </div>
+        <div id="options">
+            <div class="option">
+                <!--zamowienia i koszyk-->
+            </div>
+            <div id="login" class="option">
+                <!-- zalogowany lub nie-->
+            </div>
+        </div>
+    </div>
+
+    <div class="product_detail">
+        <!--product ID-->
+    </div>
+
+    <div id="footer">
+        <div class="about">
+            <h4 style="text-align: center;">O nas</h4>
+            <p>Jesteśmy nową firmą na rynku odzieżowym zapraszamy do zapoznania się z naszą ofertą</p>
+        </div>
+        <div class="socials">
+            <h4 style="text-align: center;">Odwiedź nas w social mediach</h4>
+            <div class="rounded-social-buttons">
+                <a class="social-button facebook" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a class="social-button twitter" href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a class="social-button instagram" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="contact">
+            <h4 style="text-align: center;">Skontaktuj się z nami</h4>
+            <div class="details">
+                <div class="info">
+                    <img class="imgs" src="img/phone.svg" alt="phone"/>
+                    <span class="info_text">606-217-320</span>
+                </div>
+                <div class="info">
+                    <img class="imgs" src="img/address.svg" alt="address"/>
+                    <span class="info_text">Kielce, ul. Zagnańska</span>
+                </div>
+                <div class="info">
+                    <img class="imgs" src="img/mail.svg" alt="mail"/>
+                    <spa class="info_text">mail@mail.com</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="snackbar"></div>
+    <script src="js/product_details_service.js"></script>
+    <script src="js/user_state.js"></script>
+    <script src="js/logout_service.js"></script>
+</body>
+</html>

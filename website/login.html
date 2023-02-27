@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FAKE - logowanie</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style_login.css">
+    </head>
+    <body>
+        <div class="back">
+            <a href="index.html"><img src="img/arrow.svg"/></a>
+        </div>
+        <div class="next_container">
+            <div class="container" id="container">
+                <div class="form-container sign-up-container">
+                    <div class="form">
+                        <h1>Utwórz konto</h1>
+                        <input id="name" type="text" placeholder="Imię" required/>
+                        <input id="surname" type="text" placeholder="Nazwisko" required/>
+                        <input id="username" type="text" placeholder="Nazwa użytkownika" required/>
+                        <input id="password" type="password" placeholder="Hasło" required/>
+                        <input id="address" type="text" placeholder="Adres" />
+                        <input id="phone" type="text" placeholder="Telefon" required/>
+                        <button  id="register">Zarejestruj</button>
+                    </div>
+                </div>
+                <div class="form-container sign-in-container">
+                    <div class="form">
+                        <h1>Zaloguj się</h1>
+                        <input id="authenticate_login" type="text" placeholder="Nazwa użytkownika" />
+                        <input id="authenticate_password" type="password" placeholder="Hasło" />
+                        <button id="authenticate">Zaloguj</button>
+                    </div>
+                </div>
+                <div class="overlay-container">
+                    <div class="overlay">
+                        <div class="overlay-panel overlay-left">
+                            <h1>Stworzyłeś konto?</h1>
+                            <p>Zaloguj się, by móc korzystać ze wszystkich funkcji serwisu!</p>
+                            <button class="ghost" id="signIn">Zaloguj się</button>
+                        </div>
+                        <div class="overlay-panel overlay-right">
+                            <h1>Pierwsza wizyta?</h1>
+                            <p>Nie czekaj zarejestruj się i poznaj korzyści z utworzenia konta</p>
+                            <button class="ghost" id="signUp">Rejestracja</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div id="snackbar"></div>
+    </body>
+
+    <script src="js/login_service.js"></script>
+
+    <script>
+        const signUpButton = document.getElementById('signUp');
+        const signInButton = document.getElementById('signIn');
+        const container = document.getElementById('container');
+
+        signUpButton.addEventListener('click', () => {
+            container.classList.add("right-panel-active");
+        });
+
+        signInButton.addEventListener('click', () => {
+            container.classList.remove("right-panel-active");
+        });
+    </script>
+</html>
